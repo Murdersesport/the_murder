@@ -96,4 +96,4 @@ Client.channels.cache
 });
 
 
-Client.login("process.env.token")
+Client.login(process.env.token)

@@ -96,4 +96,4 @@ Client.channels.cache
 });
 
 
-Client.login("OTc0MzA3MzA3MDIwMjM0NzYz.GY4zBQ.Mq6LS76XuJAIHoowmBDZGTgEZO-kTtYgKIezKY")
+Client.login("process.env.token")

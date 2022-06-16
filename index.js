@@ -73,9 +73,9 @@ Client.on("messageCreate", message => {
       message.channel.send ("<:mid:863761049344671794><:mid:863761049344671794><:mid:863761049344671794> SERVER RULES  <:mifd:863761049344671794><:mid:863761049344671794> \n <:dot:863759818820812810> Don't Be Racist \n <:dot:863759818820812810> Don't Be Toxic \n <:dot:863759818820812810> Stop Spamming \n <:dot:863759818820812810> No +18 Pics \n <:dot:863759818820812810> Dont Share Your Own Discord Server ( in chat - or private to a member ) \n <:dot:863759818820812810> Don't Scream On The Mic \n <:dot:863759818820812810> If a Moderator Told You Stop Something . Stop It \n <:dot:863759818820812810> Don't Post Someone's personal information ( pictures - conversation ) \n <:dot:863759818820812810> Be Human \n <:mid:863761049344671794><:mid:863761049344671794><:mid:863761049344671794><:mid:863761049344671794><:mid:863761049344671794><:mid:863761049344671794><:mid:863761049344671794><:end:863761091955654656> \n <:dot:863759818820812810> Respect the Terms of Service & Guidelines of Discord. \n <:sahm:863759831332683777>  https://discord.com/terms \n <:sahm:863759831332683777>  https://discord.com/guidelines \n <:mid:863761049344671794><:mid:863761049344671794><:mid:863761049344671794> INVITE LINK  <:mid:863761049344671794><:mid:863761049344671794><:end:863761091955654656> \n <:dot:863759818820812810> Invite your friends using this link : https://discord.gg/BU2aH9UytV" )
   }
    //$othmane
-   if (message.content === prefix + "othmane"){
+  if (message.content === prefix + "othmane"){
        message.channel.send ("rwijl")
-   }
+  }
    
 });
 

@@ -1,4 +1,4 @@
-const Client = require("../Structure/Client")
+const Client = require("./Structure/Client")
 const bot = new Client();
 
 const prefix = "$"

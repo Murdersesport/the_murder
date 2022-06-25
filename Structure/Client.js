@@ -21,9 +21,13 @@ class Client extends Discord.Client {
 
         fs.readdirSync("./Commandes").filter(file => file.endsWith(".js")).forEach(async f => {
 
-            const command = require(`../Commandes/${f}`)
-            console.log(`${f} commande charged succesfuly`)
-            this.commands.set(command.name, command)
+            /**
+             * @type {Command}
+             */
+
+            let props = require(`../Commandes/${f}`);
+            console.log(`${f} commande charged succesfuly`);
+            this.commands.set(props.name, props)
         })
 
         this.login(token)

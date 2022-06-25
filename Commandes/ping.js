@@ -1,5 +1,5 @@
 const Discord = require("discord.js")
-const Command = require("../structure/Command")
+const Command = require("../Structure/Command")
 
 module.exports = new Command({
 

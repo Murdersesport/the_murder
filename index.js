@@ -17,4 +17,4 @@ bot.on("ready", async () => {
     console.log(`${bot.user.username} : Onligne in ${bot.guilds.cahes.size} server`)
 })
 
-Client.start(token);
+Client.start(process.env.token);

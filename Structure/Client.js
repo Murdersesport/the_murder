@@ -13,8 +13,10 @@ class Client extends Discord.Client {
          * @type {Discord.Collection<string, Command>}
          */
 
-        this.commands = new Discord.Collection();
-        this.color = "#880808";
+         this.commands = new Discord.Collection();
+         this.color = "#880808";
+
+        
     }
 
     start(token) {

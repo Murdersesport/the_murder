@@ -32,7 +32,7 @@ class Client extends Discord.Client {
             this.commands.set(props.name, props)
         })
 
-        this.login(token)
+        this.login(process.env.token)
     }
 }
 

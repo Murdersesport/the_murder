@@ -1,22 +1,20 @@
 const Client = require("./Structure/Client")
 const bot = new Client();
 
-const prefix = "$"
+bot.on("messageCreate", async message => {
 
-Client.on("ready", async () => {
-    console.log(`${bot.user.username} : En ligne sur ${bot.guilds.cache.size} serveur(s) !`);
-});
+    if(message.content.startsWith("!")) return;
 
-Client.on("messageCreate", async message => {
-    if (message.author.bot) return;
-    if ($message.content.startsWith("$")) return;
     const command = bot.commands.get(message.content.slice(1))
-    const args = message.content.substring(1).split(/ +/);
-    if ($command) return message.reply(`This commande is not valable`)
+
+    if(!command) return message.reply(`this command is not found`)
+
     command.run(bot, message, args)
-  
 })
 
+bot.on("ready", async () => {
 
+    console.log(`${bot.user.username} : Onligne in ${bot.guilds.cahes.size} server`)
+})
 
 Client.start(process.env.token);

@@ -1,3 +1,4 @@
+const fs = require("fs");
 const Discord= require("discord.js");
 const Client = new Discord.Client({
     intents: [
@@ -8,10 +9,17 @@ const Client = new Discord.Client({
     ]
 });
 
-Client.on("ready", () => {
-    console.log("murder")
+const eventFiles = fs.readdirSync("./events").filter(file => file.endsWith(".js"));
 
-});
+for (const file of eventFiles){
+    const event = require("./events/" + file);
+    if(event.once){
+        Client.once(event.name, (...arg) => event.execute(...args));
+    }
+    else {
+        Client.on(event.name, (...args) => event.execute(...args));
+    }
+}
 
 const prefix = "$";
 

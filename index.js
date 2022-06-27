@@ -2,4 +2,4 @@ const Client = require("discord.js")
 
 
 
-Client.start(process.env.token)
+Client.login(process.env.token)

@@ -1,5 +1,7 @@
-const Client = require("./Structure/Client")
-const bot = new Client();
+const Client = require("discord.js")
+const fs = require("fs")
+const intents = new Discord.Intents(32767)
+const bot = new Discord.Client({intents})
 
 bot.on("messageCreate", async message => {
 
@@ -17,4 +19,4 @@ bot.on("ready", async () => {
     console.log(`${bot.user.username} : Onligne in ${bot.guilds.cahes.size} server`)
 })
 
-Client.start(process.env.token);
+Client.start(process.env.token)

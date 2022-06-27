@@ -1,18 +1,4 @@
 const Client = require("discord.js")
-const fs = require("fs")
-const intents = new Discord.Intents(32767)
-const bot = new Discord.Client({intents})
-
-bot.on("messageCreate", async message => {
-
-    if(message.content.startsWith("!")) return;
-
-    const command = bot.commands.get(message.content.slice(1))
-
-    if(!command) return message.reply(`this command is not found`)
-
-    command.run(bot, message, args)
-})
 
 bot.on("ready", async () => {
 

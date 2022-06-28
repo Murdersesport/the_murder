@@ -9,6 +9,6 @@ module.exports = {
         var data = new SlashCommandBuilder()
             .setName("ping")
             .setDescription("renvoie pong");
-    
+        Client.application.commands.create(data);
     }
 }

@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require("@discordjs/builder");
+const { SlashCommandBuilder } = require("@discordjs/builders");
 
 module.exports = {
     name: "ready",

@@ -75,7 +75,7 @@ Client.on("messageCreate", message => {
 Client.on("interactionCreate", interaction =>{
       if(interaction.isButton()){
         if(interaction.customId === "Event"){
-          interaction.author.reply("kayn asat good luck trb7")
+          message.author.send("hello word")("kayn asat good luck trb7")
         }
       }
     })

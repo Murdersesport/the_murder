@@ -72,12 +72,11 @@ Client.on("messageCreate", message => {
         );
       message.channel.send({components: [row]})
     };
-Client.on("interactionCreate", interaction =>{
-      if(interaction.isButton()){
-        if(interaction.customId === "Event"){
-          message.author.send("hello word")("kayn asat good luck trb7")
-        }
-      }
+Client.on("clickButton", async (button) =>{
+      if(button.id === "Event"){
+          message.author.send("kayn asat good luck")
+      };
+      
     })
   
     //$rulesimage

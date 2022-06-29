@@ -40,9 +40,9 @@ Client.on("messageCreate", message => {
        .addFields(
           { name: 'Rule 1', value: '**invite 5**' },
           { name: 'Rule 2', value: '**follow instaram**' },
-          { name: 'Rule 3', value: '**5000 VoiceXP**' },)
+          { name: 'Rule 3', value: '**10000 VoiceXP**' },)
        .setTimestamp()
-       .setFooter({ text: 'Event ghaysali 07/07 \n **Good Luck**', });
+       .setFooter({ text: 'Event ghaysali 10/07 \n **Good Luck**', });
       
        
       message.channel.send({ embeds: [nitroevent]});
@@ -50,7 +50,7 @@ Client.on("messageCreate", message => {
 
     //$help 
     if (message.content === prefix + "help"){
-    message.reply( "wa ta sr t9awed" )};
+    message.reply( "wa ta sir t9awed" )};
 
     //$tag
     if (message.content === prefix + "tag"){ 

@@ -60,7 +60,7 @@ Client.on("messageCreate", message => {
     if (message.content === prefix + "reactionevent"){
       var row = new Discord.MessageActionRow()
        .addComponents(new Discord.MessageButton()
-        .setCustomId("Event")
+        .setId("Event")
         .setLabel("Done")
         .setStyle("SECONDARY")
         .setEmoji("🎉")

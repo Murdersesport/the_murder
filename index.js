@@ -52,6 +52,9 @@ Client.on("messageCreate", message => {
     if (message.content === prefix + "help"){
     message.reply( "wa ta sir t9awed" )};
 
+    //$wesh
+    if (message.content === prefix + "wesh"){
+      message.reply( "wesh" )};
     //$tag
     if (message.content === prefix + "tag"){ 
     message.channel.send ( "|| @everyone ||")}; 
